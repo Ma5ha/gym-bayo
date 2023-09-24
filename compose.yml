@@ -1,0 +1,44 @@
+version: '1.0'
+
+services:
+  backend:
+    environment: 
+      DATABASE_URL: postgres://postgres:postgres@db:5432/gym-bayo
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+
+    depends_on: [db]
+
+    build: .
+
+    volumes:
+      - type: bind
+        source: ./apps/backend
+        target: /gym-bayo/apps/backend
+
+      - type: bind
+        source: ./prisma
+        target: /gym-bayo/prisma
+
+    ports:
+      - 3000:3333
+    
+    command: ["npx", "nx", "run", "backend:serve" ]
+  
+  db:
+    image: postgres
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/gym-bayo
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+     
+
+volumes:
+  backend:
+
+
+      
