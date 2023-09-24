@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["components/src/index.ts"],
+      "@components/server": ["components/src/server.ts"],
+      "@prisma": ["./prisma/client"],
+      "@global.css":["./global.css"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
