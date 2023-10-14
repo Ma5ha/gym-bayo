@@ -1,6 +1,17 @@
 version: '1.0'
 
 services:
+  storybook:
+    build: .
+
+    volumes:
+      - type: bind
+        source: ./components
+        target: /gym-bayo/components
+    ports:
+      - 4400:4400
+    command: ["npx", "nx", "run", "components:storybook" ]
+      
   backend:
     environment: 
       DATABASE_URL: postgres://postgres:postgres@db:5432/gym-bayo
