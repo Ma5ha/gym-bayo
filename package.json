@@ -8,6 +8,7 @@
   },
   "private": true,
   "dependencies": {
+    "@fontsource/oswald": "^5.0.17",
     "@nx/next": "16.8.1",
     "@prisma/client": "^5.3.1",
     "@swc/helpers": "~0.5.0",

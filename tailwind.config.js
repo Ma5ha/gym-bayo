@@ -12,15 +12,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        'gb-black':'#000000',
-        'gb-black-lighter':'#0a0a0a',
-        'gb-pure-white':'#ffffff',
-        'gb-orange':'#f36201',
-        'gb-grey':'#333333',
-        'gb-grey-dark':'#151515',
-        'gb-grey-light':'#232323'
-      }
+      colors: {
+        'gb-black': '#000000',
+        'gb-black-lighter': '#0a0a0a',
+        'gb-pure-white': '#ffffff',
+        'gb-orange': '#f36201',
+        'gb-grey': '#333333',
+        'gb-grey-dark': '#151515',
+        'gb-grey-light': '#232323',
+      },
+      fontFamily: {
+        primary: ['Muli'],
+        secondary: ['Oswald'],
+      },
     },
   },
   plugins: [],
