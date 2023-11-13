@@ -3,9 +3,13 @@
 @tailwind utilities;
 @import url(node_modules/@fontsource/oswald/400.css);
 
-
 @layer components {
   .btn-blue {
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
   }
+}
+
+.h2 {
+  font-size: 48px;
+  font-weight: 700;
 }
