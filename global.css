@@ -1,9 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url(node_modules/@fontsource/oswald/400.css);
+@import url(node_modules/@fontsource/muli/800.css);
+@import url(node_modules/@fontsource/oswald/800.css);
+@import url(node_modules/@fontsource/muli/400.css);
+@import url(node_modules/@fontsource/oswald/600.css);
+@import url(node_modules/@fontsource/muli/700.css);
+@import url(node_modules/@fontsource/oswald/700.css);
 @layer components {
-    .btn-blue {
-      @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
-    }
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
   }
+}
+
+.nav-section {
+  font-weight: 400;
+  font-size: 15px;
+}
+.span {
+  font-weight: 800;
+  font-size: 18px;
+}
+.h1 {
+  font-weight: 700;
+  font-size: 80px;
+}
+.primary-btn {
+  font-weight: 400;
+  font-size: 14px;
+}
+.h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.card-h4{
+  font-weight: 600;
+font-size: 22px;
+}
+.card-p{
+  font-weight: 400;
+  font-size: 14px;
+}
+.card-span{
+  font-weight: 700;
+  font-size: 12px;
+}
+.card-h5{
+  font-weight: 600;
+  font-size: 20px;
+}
+.h2-banner-section{
+  font-weight: 700;
+  font-size: 48px ;
+}
+.subtitle-banner-section{
+  font-weight: 700;
+  font-size: 20px;
+}
+.h3-price-card{
+  font-weight: 600;
+  font-size: 28px;
+}
